@@ -1,0 +1,16 @@
+site 'http://community.opscode.com/api/v1'
+
+cookbook "cloudfoundry",
+  :git => "https://github.com/zephirworks/cloudfoundry-cookbook.git",
+  :ref => "master"
+
+cookbook "cloudfoundry-cloud_controller",
+  :git => "https://github.com/zephirworks/cloudfoundry-cloud_controller-cookbook.git",
+  :ref => "master"
+
+cookbook "nats-server",
+  :git => "https://github.com/zephirworks/nats-cookbook.git",
+  :ref => "master"
+
+cookbook "postgresql"
+cookbook "redisio"
