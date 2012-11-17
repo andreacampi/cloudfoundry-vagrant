@@ -39,6 +39,33 @@ SITE
     yum (1.0.0)
 
 GIT
+  remote: https://github.com/andreacampi/cloudfoundry-cookbook.git
+  ref: master
+  sha: 0d63ae46615512e39bdd7234c39e676dd646979a
+  specs:
+    cloudfoundry (0.99.1)
+      apt (>= 0.0.0)
+      logrotate (>= 0.0.0)
+      rbenv (>= 0.0.0)
+
+GIT
+  remote: https://github.com/andreacampi/cloudfoundry-dea-cookbook.git
+  ref: master
+  sha: 1a9c4e320af31968e5f2082e22d97c478b7e0d1f
+  specs:
+    cloudfoundry-dea (0.99.1)
+      cloudfoundry (>= 0.0.0)
+
+GIT
+  remote: https://github.com/andreacampi/cloudfoundry-ruby-runtime-cookbook.git
+  ref: master
+  sha: ebfe459d6e1845dffda17b5a3f0d1fae24e41ab7
+  specs:
+    cloudfoundry-ruby-runtime (0.99.0)
+      cloudfoundry (>= 0.0.0)
+      rbenv (>= 0.0.0)
+
+GIT
   remote: https://github.com/zephirworks/cloudfoundry-cloud_controller-cookbook.git
   ref: master
   sha: 8f8328403ea7af2d2eb59b4351443617295e1429
@@ -48,16 +75,6 @@ GIT
       database (>= 0.0.0)
       nginx (>= 0.0.0)
       postgresql (>= 0.0.0)
-      rbenv (>= 0.0.0)
-
-GIT
-  remote: https://github.com/zephirworks/cloudfoundry-cookbook.git
-  ref: master
-  sha: 21afbaa35d8eefd3bc79a1b248e8b2e6eab6a060
-  specs:
-    cloudfoundry (0.99.1)
-      apt (>= 0.0.0)
-      logrotate (>= 0.0.0)
       rbenv (>= 0.0.0)
 
 GIT
@@ -72,6 +89,8 @@ GIT
 DEPENDENCIES
   cloudfoundry (>= 0)
   cloudfoundry-cloud_controller (>= 0)
+  cloudfoundry-dea (>= 0)
+  cloudfoundry-ruby-runtime (>= 0)
   nats-server (>= 0)
   postgresql (>= 0)
   redisio (>= 0)
