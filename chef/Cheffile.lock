@@ -63,7 +63,7 @@ GIT
 GIT
   remote: https://github.com/zephirworks/nats-cookbook.git
   ref: master
-  sha: efe8790bc2495df0c2607fef6ddf8fe1e47e12ff
+  sha: 7cc751af234c48786b3e64b62f3ba73dc044b7cd
   specs:
     nats-server (0.99.0)
       cloudfoundry (>= 0.0.0)
