@@ -1,0 +1,15 @@
+{
+  "name": "cloudfoundry_ruby_runtime_1_9_2",
+  "description": "CloudFoundry DEA",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[cloudfoundry-ruby-runtime::ruby_1_9_2]"
+  ],
+  "env_run_lists": {
+  }
+}
