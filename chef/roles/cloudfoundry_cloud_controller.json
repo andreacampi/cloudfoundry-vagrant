@@ -1,0 +1,16 @@
+{
+  "name": "cloudfoundry_cloud_controller",
+  "description": "CloudFoundry cloud_controller",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[cloudfoundry-cloud_controller::database]",
+    "recipe[cloudfoundry-cloud_controller::server]"
+  ],
+  "env_run_lists": {
+  }
+}
