@@ -1,0 +1,19 @@
+{
+  "name": "cloudfoundry-single-node",
+  "description": "A CloudFoundry mini-cluster on one node",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "role[cloudfoundry_common]",
+    "role[cloudfoundry_cc_postgresql_server]",
+    "role[cloudfoundry_nats_server]",
+    "role[cloudfoundry_redis_vcap]",
+    "role[cloudfoundry_cloud_controller]"
+  ],
+  "env_run_lists": {
+  }
+}
