@@ -1,7 +1,7 @@
 site 'http://community.opscode.com/api/v1'
 
 cookbook "cloudfoundry",
-  :git => "https://github.com/andreacampi/cloudfoundry-cookbook.git",
+  :git => "https://github.com/zephirworks/cloudfoundry-cookbook.git",
   :ref => "master"
 
 cookbook "cloudfoundry-cloud_controller",
@@ -9,11 +9,11 @@ cookbook "cloudfoundry-cloud_controller",
   :ref => "master"
 
 cookbook "cloudfoundry-dea",
-  :git => "https://github.com/andreacampi/cloudfoundry-dea-cookbook.git",
+  :git => "https://github.com/zephirworks/cloudfoundry-dea-cookbook.git",
   :ref => "master"
 
 cookbook "cloudfoundry-ruby-runtime",
-  :git => "https://github.com/andreacampi/cloudfoundry-ruby-runtime-cookbook.git",
+  :git => "https://github.com/zephirworks/cloudfoundry-ruby-runtime-cookbook.git",
   :ref => "master"
 
 cookbook "nats-server",
