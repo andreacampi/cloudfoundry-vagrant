@@ -3,17 +3,24 @@
   "description": "A CloudFoundry mini-cluster on one node",
   "json_class": "Chef::Role",
   "default_attributes": {
+    "cloudfoundry": {
+      "runtimes": {
+        "ruby19": {
+          "frameworks": [ "rails3" ]
+        }
+      }
+    }
   },
   "override_attributes": {
   },
   "chef_type": "role",
   "run_list": [
     "role[cloudfoundry_common]",
+    "role[cloudfoundry_ruby_runtime_1_9_2]",
     "role[cloudfoundry_cc_postgresql_server]",
     "role[cloudfoundry_nats_server]",
     "role[cloudfoundry_redis_vcap]",
     "role[cloudfoundry_cloud_controller]",
-    "role[cloudfoundry_ruby_runtime_1_9_2]",
     "role[cloudfoundry_dea]"
   ],
   "env_run_lists": {
