@@ -3,7 +3,7 @@ SITE
   specs:
     apt (1.5.0)
     aws (0.100.2)
-    bluepill (1.1.2)
+    bluepill (2.0.0)
     build-essential (1.2.0)
     database (1.3.6)
       aws (>= 0.0.0)
@@ -41,7 +41,7 @@ SITE
 GIT
   remote: https://github.com/zephirworks/cloudfoundry-cloud_controller-cookbook.git
   ref: master
-  sha: 8f8328403ea7af2d2eb59b4351443617295e1429
+  sha: 2b5cdd8bb853d8a9ab25208310d9256aeef7f781
   specs:
     cloudfoundry-cloud_controller (0.99.0)
       cloudfoundry (>= 0.0.0)
@@ -78,6 +78,15 @@ GIT
       rbenv (>= 0.0.0)
 
 GIT
+  remote: https://github.com/zephirworks/cloudfoundry-stager-cookbook.git
+  ref: master
+  sha: 72bdb2f2b0cfe27e530273f175aca46d8a96741d
+  specs:
+    cloudfoundry-stager (0.99.0)
+      cloudfoundry (>= 0.0.0)
+      rbenv (>= 0.0.0)
+
+GIT
   remote: https://github.com/zephirworks/nats-cookbook.git
   ref: master
   sha: 7cc751af234c48786b3e64b62f3ba73dc044b7cd
@@ -91,6 +100,7 @@ DEPENDENCIES
   cloudfoundry-cloud_controller (>= 0)
   cloudfoundry-dea (>= 0)
   cloudfoundry-ruby-runtime (>= 0)
+  cloudfoundry-stager (>= 0)
   nats-server (>= 0)
   postgresql (>= 0)
   redisio (>= 0)

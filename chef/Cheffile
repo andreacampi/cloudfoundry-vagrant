@@ -16,6 +16,10 @@ cookbook "cloudfoundry-ruby-runtime",
   :git => "https://github.com/zephirworks/cloudfoundry-ruby-runtime-cookbook.git",
   :ref => "master"
 
+cookbook "cloudfoundry-stager",
+  :git => "https://github.com/zephirworks/cloudfoundry-stager-cookbook.git",
+  :ref => "master"
+
 cookbook "nats-server",
   :git => "https://github.com/zephirworks/nats-cookbook.git",
   :ref => "master"
