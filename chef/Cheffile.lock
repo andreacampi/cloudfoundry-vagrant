@@ -39,6 +39,24 @@ SITE
     yum (1.0.0)
 
 GIT
+  remote: https://github.com/andreacampi/cloudfoundry-nginx-cookbook.git
+  ref: master
+  sha: a522de436a9bebf63a8c932df715171a08df4e58
+  specs:
+    cloudfoundry-nginx (0.101.6)
+      cloudfoundry (>= 0.0.0)
+      nginx (>= 0.0.0)
+
+GIT
+  remote: https://github.com/andreacampi/cloudfoundry-router-cookbook.git
+  ref: master
+  sha: f1fca97dfa83600e78cf62bdc6da1b9650579227
+  specs:
+    cloudfoundry-router (0.0.1)
+      cloudfoundry (>= 0.0.0)
+      cloudfoundry-nginx (>= 0.0.0)
+
+GIT
   remote: https://github.com/zephirworks/cloudfoundry-cloud_controller-cookbook.git
   ref: master
   sha: 2b5cdd8bb853d8a9ab25208310d9256aeef7f781
@@ -99,6 +117,8 @@ DEPENDENCIES
   cloudfoundry (>= 0)
   cloudfoundry-cloud_controller (>= 0)
   cloudfoundry-dea (>= 0)
+  cloudfoundry-nginx (>= 0)
+  cloudfoundry-router (>= 0)
   cloudfoundry-ruby-runtime (>= 0)
   cloudfoundry-stager (>= 0)
   nats-server (>= 0)

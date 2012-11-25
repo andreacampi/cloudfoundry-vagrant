@@ -12,6 +12,14 @@ cookbook "cloudfoundry-dea",
   :git => "https://github.com/zephirworks/cloudfoundry-dea-cookbook.git",
   :ref => "master"
 
+cookbook "cloudfoundry-nginx",
+  :git => "https://github.com/andreacampi/cloudfoundry-nginx-cookbook.git",
+  :ref => "master"
+
+cookbook "cloudfoundry-router",
+  :git => "https://github.com/andreacampi/cloudfoundry-router-cookbook.git",
+  :ref => "master"
+
 cookbook "cloudfoundry-ruby-runtime",
   :git => "https://github.com/zephirworks/cloudfoundry-ruby-runtime-cookbook.git",
   :ref => "master"

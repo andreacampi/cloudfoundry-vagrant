@@ -22,7 +22,8 @@
     "role[cloudfoundry_redis_vcap]",
     "role[cloudfoundry_cloud_controller]",
     "role[cloudfoundry_stager]",
-    "role[cloudfoundry_dea]"
+    "role[cloudfoundry_dea]",
+    "role[cloudfoundry_router]"
   ],
   "env_run_lists": {
   }
