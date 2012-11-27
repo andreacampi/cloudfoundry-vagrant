@@ -81,7 +81,7 @@ GIT
 GIT
   remote: https://github.com/zephirworks/cloudfoundry-dea-cookbook.git
   ref: master
-  sha: b049b75690cc866643c6d3e1d6fd3242b7005863
+  sha: 2dddd2b8465092bc761e328eefce776b685c9efa
   specs:
     cloudfoundry-dea (0.99.1)
       cloudfoundry (>= 0.0.0)
