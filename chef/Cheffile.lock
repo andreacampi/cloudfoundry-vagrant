@@ -4,6 +4,19 @@ SITE
     apt (1.5.0)
     aws (0.100.2)
     build-essential (1.2.0)
+    cloudfoundry (1.0.0)
+      apt (>= 0.0.0)
+      logrotate (>= 0.0.0)
+      rbenv (>= 0.0.0)
+    cloudfoundry-cloud_controller (1.0.0)
+      cloudfoundry (>= 0.0.0)
+      database (>= 0.0.0)
+      nginx (>= 0.0.0)
+      postgresql (>= 0.0.0)
+      rbenv (>= 0.0.0)
+    cloudfoundry-ruby-runtime (1.0.0)
+      cloudfoundry (>= 0.0.0)
+      rbenv (>= 0.0.0)
     database (1.3.6)
       aws (>= 0.0.0)
       mysql (>= 1.3.0)
@@ -16,9 +29,12 @@ SITE
       runit (>= 0.0.0)
       yum (>= 0.0.0)
     logrotate (1.0.2)
-    mysql (1.3.0)
+    mysql (2.0.2)
       build-essential (>= 0.0.0)
       openssl (>= 0.0.0)
+    nats (1.0.0)
+      cloudfoundry (>= 0.0.0)
+      rbenv (>= 0.0.0)
     nginx (1.1.0)
       build-essential (>= 0.0.0)
       ohai (>= 1.1.0)
@@ -53,43 +69,12 @@ GIT
       cloudfoundry-nginx (>= 0.0.0)
 
 GIT
-  remote: https://github.com/zephirworks/cloudfoundry-cloud_controller-cookbook.git
-  ref: master
-  sha: 2b5cdd8bb853d8a9ab25208310d9256aeef7f781
-  specs:
-    cloudfoundry-cloud_controller (0.99.0)
-      cloudfoundry (>= 0.0.0)
-      database (>= 0.0.0)
-      nginx (>= 0.0.0)
-      postgresql (>= 0.0.0)
-      rbenv (>= 0.0.0)
-
-GIT
-  remote: https://github.com/zephirworks/cloudfoundry-cookbook.git
-  ref: master
-  sha: d3bcbb5ae9caf0343bdba712ac52a422d317543e
-  specs:
-    cloudfoundry (0.99.1)
-      apt (>= 0.0.0)
-      logrotate (>= 0.0.0)
-      rbenv (>= 0.0.0)
-
-GIT
   remote: https://github.com/zephirworks/cloudfoundry-dea-cookbook.git
   ref: master
   sha: 2dddd2b8465092bc761e328eefce776b685c9efa
   specs:
     cloudfoundry-dea (0.99.1)
       cloudfoundry (>= 0.0.0)
-
-GIT
-  remote: https://github.com/zephirworks/cloudfoundry-ruby-runtime-cookbook.git
-  ref: master
-  sha: 79565f223ded1fb21b9e6ee508a985c9fa35fb4b
-  specs:
-    cloudfoundry-ruby-runtime (0.99.0)
-      cloudfoundry (>= 0.0.0)
-      rbenv (>= 0.0.0)
 
 GIT
   remote: https://github.com/zephirworks/cloudfoundry-stager-cookbook.git
@@ -100,13 +85,12 @@ GIT
       cloudfoundry (>= 0.0.0)
       rbenv (>= 0.0.0)
 
-GIT
-  remote: https://github.com/zephirworks/nats-cookbook.git
-  ref: master
-  sha: 7cc751af234c48786b3e64b62f3ba73dc044b7cd
+PATH
+  remote: /Users/andrea/github/cf-cookbooks/cloudfoundry-health_manager
   specs:
-    nats-server (0.99.0)
+    cloudfoundry-health_manager (0.99.0)
       cloudfoundry (>= 0.0.0)
+      cloudfoundry-cloud_controller (>= 0.0.0)
       rbenv (>= 0.0.0)
 
 PATH
@@ -126,7 +110,7 @@ DEPENDENCIES
   cloudfoundry-router (>= 0)
   cloudfoundry-ruby-runtime (>= 0)
   cloudfoundry-stager (>= 0)
-  nats-server (>= 0)
+  nats (>= 0)
   postgresql (>= 0)
   redisio (>= 0)
 
