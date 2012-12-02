@@ -1,0 +1,15 @@
+{
+  "name": "cloudfoundry_health_manager",
+  "description": "CloudFoundry health_manager",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[cloudfoundry-health_manager]"
+  ],
+  "env_run_lists": {
+  }
+}
