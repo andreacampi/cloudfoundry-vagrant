@@ -109,10 +109,19 @@ GIT
       cloudfoundry (>= 0.0.0)
       rbenv (>= 0.0.0)
 
+PATH
+  remote: /Users/andrea/github/cf-cookbooks/cloudfoundry-health_manager
+  specs:
+    cloudfoundry-health_manager (0.99.0)
+      cloudfoundry (>= 0.0.0)
+      cloudfoundry-cloud_controller (>= 0.0.0)
+      rbenv (>= 0.0.0)
+
 DEPENDENCIES
   cloudfoundry (>= 0)
   cloudfoundry-cloud_controller (>= 0)
   cloudfoundry-dea (>= 0)
+  cloudfoundry-health_manager (>= 0)
   cloudfoundry-nginx (>= 0)
   cloudfoundry-router (>= 0)
   cloudfoundry-ruby-runtime (>= 0)

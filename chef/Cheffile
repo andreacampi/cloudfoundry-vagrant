@@ -12,6 +12,9 @@ cookbook "cloudfoundry-dea",
   :git => "https://github.com/zephirworks/cloudfoundry-dea-cookbook.git",
   :ref => "master"
 
+cookbook "cloudfoundry-health_manager",
+  :path => "/Users/andrea/github/cf-cookbooks/cloudfoundry-health_manager"
+
 cookbook "cloudfoundry-nginx",
   :git => "https://github.com/andreacampi/cloudfoundry-nginx-cookbook.git",
   :ref => "master"
