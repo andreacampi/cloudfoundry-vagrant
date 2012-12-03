@@ -2,28 +2,12 @@ site 'http://community.opscode.com/api/v1'
 
 cookbook "cloudfoundry"
 cookbook "cloudfoundry-cloud_controller"
-
-cookbook "cloudfoundry-dea",
-  :git => "https://github.com/zephirworks/cloudfoundry-dea-cookbook.git",
-  :ref => "master"
-
-cookbook "cloudfoundry-health_manager",
-  :path => "/Users/andrea/github/cf-cookbooks/cloudfoundry-health_manager"
-
-cookbook "cloudfoundry-nginx",
-  :git => "https://github.com/andreacampi/cloudfoundry-nginx-cookbook.git",
-  :ref => "master"
-
-cookbook "cloudfoundry-router",
-  :git => "https://github.com/andreacampi/cloudfoundry-router-cookbook.git",
-  :ref => "master"
-
+cookbook "cloudfoundry-dea"
+cookbook "cloudfoundry-health_manager"
+cookbook "cloudfoundry-nginx"
+cookbook "cloudfoundry-router"
 cookbook "cloudfoundry-ruby-runtime"
-
-cookbook "cloudfoundry-stager",
-  :git => "https://github.com/zephirworks/cloudfoundry-stager-cookbook.git",
-  :ref => "master"
-
+cookbook "cloudfoundry-stager"
 cookbook "nats"
 
 cookbook "postgresql"
