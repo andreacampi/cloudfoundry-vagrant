@@ -9,7 +9,8 @@
   "chef_type": "role",
   "run_list": [
     "recipe[cloudfoundry-cloud_controller::database]",
-    "recipe[cloudfoundry-cloud_controller::server]"
+    "recipe[cloudfoundry-cloud_controller::server]",
+    "recipe[cloudfoundry-cloud_controller::nginx]"
   ],
   "env_run_lists": {
   }
