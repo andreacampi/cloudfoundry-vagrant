@@ -1,10 +1,10 @@
 site 'http://community.opscode.com/api/v1'
 
 cookbook "cloudfoundry"
-cookbook "cloudfoundry-cloud_controller"
+cookbook "cloudfoundry-cloud_controller", '1.1.0'
 cookbook "cloudfoundry-dea"
 cookbook "cloudfoundry-health_manager"
-cookbook "cloudfoundry-nginx"
+cookbook "cloudfoundry-nginx", '1.0.2'
 cookbook "cloudfoundry-router"
 cookbook "cloudfoundry-ruby-runtime"
 cookbook "cloudfoundry-stager"
