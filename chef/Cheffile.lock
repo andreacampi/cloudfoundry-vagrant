@@ -4,7 +4,7 @@ SITE
     apt (1.5.0)
     aws (0.100.2)
     build-essential (1.2.0)
-    cloudfoundry (1.0.0)
+    cloudfoundry (1.0.2)
       apt (>= 0.0.0)
       logrotate (>= 0.0.0)
       rbenv (>= 0.0.0)
@@ -67,7 +67,7 @@ SITE
     yum (2.0.2)
 
 DEPENDENCIES
-  cloudfoundry (>= 0)
+  cloudfoundry (~> 1.0.2)
   cloudfoundry-cloud_controller (= 1.1.0)
   cloudfoundry-dea (>= 0)
   cloudfoundry-health_manager (>= 0)
