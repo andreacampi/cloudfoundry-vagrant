@@ -4,9 +4,11 @@ cookbook "cloudfoundry", '~> 1.0.2'
 cookbook "cloudfoundry-cloud_controller", '1.1.0'
 cookbook "cloudfoundry-dea"
 cookbook "cloudfoundry-health_manager"
+cookbook "cloudfoundry-mongodb-service"
 cookbook "cloudfoundry-nginx", '1.0.2'
 cookbook "cloudfoundry-router"
 cookbook "cloudfoundry-ruby-runtime"
+cookbook "cloudfoundry_service"
 cookbook "cloudfoundry-stager"
 cookbook "nats"
 

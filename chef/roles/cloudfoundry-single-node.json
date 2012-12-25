@@ -24,7 +24,9 @@
     "role[cloudfoundry_health_manager]",
     "role[cloudfoundry_stager]",
     "role[cloudfoundry_dea]",
-    "role[cloudfoundry_router]"
+    "role[cloudfoundry_router]",
+    "role[cloudfoundry_mongodb_gateway]",
+    "role[cloudfoundry_mongodb_node]"
   ],
   "env_run_lists": {
   }

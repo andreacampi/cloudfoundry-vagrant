@@ -1,0 +1,16 @@
+{
+  "name": "cloudfoundry_mongodb_node",
+  "description": "CloudFoundry MongoDB node",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[cloudfoundry-mongodb-service::node]",
+    "recipe[cloudfoundry-mongodb-service::install22]"
+  ],
+  "env_run_lists": {
+  }
+}
