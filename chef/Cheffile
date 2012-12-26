@@ -1,7 +1,7 @@
 site 'http://community.opscode.com/api/v1'
 
-cookbook "cloudfoundry", '~> 1.0.2'
-cookbook "cloudfoundry-cloud_controller", '1.1.0'
+cookbook "cloudfoundry", '~> 1.0.1', :git => 'https://github.com/andreacampi/cloudfoundry-cookbook.git', :ref => 'cleanup-old-recipes'
+cookbook "cloudfoundry-cloud_controller", '1.1.0', :git => 'https://github.com/andreacampi/cloudfoundry-cloud_controller-cookbook.git', :ref => 'cleanup-old-recipes'
 cookbook "cloudfoundry-dea"
 cookbook "cloudfoundry-health_manager"
 cookbook "cloudfoundry-mongodb-service"
