@@ -1,0 +1,3 @@
+chef/cookbooks/
+chef/tmp/
+chef/Cheffile.lock
