@@ -3,6 +3,7 @@ site 'http://community.opscode.com/api/v1'
 cookbook "cloudfoundry", '~> 1.0.2'
 cookbook "cloudfoundry-cloud_controller", '1.1.0'
 cookbook "cloudfoundry-dea"
+cookbook "cloudfoundry-filesystem-service"
 cookbook "cloudfoundry-health_manager"
 cookbook "cloudfoundry-mongodb-service", '~> 1.0.1'
 cookbook "cloudfoundry-nginx", '1.0.2'

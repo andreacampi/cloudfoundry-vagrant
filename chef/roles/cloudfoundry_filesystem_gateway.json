@@ -1,0 +1,20 @@
+{
+  "name": "cloudfoundry_filesystem_gateway",
+  "description": "CloudFoundry Filesystem gateway",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "cloudfoundry_filesystem_service": {
+      "backends": [
+        "/tmp"
+      ]
+    }
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[cloudfoundry-filesystem-service::gateway]"
+  ],
+  "env_run_lists": {
+  }
+}
