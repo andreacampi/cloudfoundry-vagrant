@@ -44,6 +44,26 @@ for Cloud Foundry components that need to connect to the `cloud_controller`.
 This may be different from the public URL, depending on your topology.
 Defaults to `http://api.vcap.me:9200`.
 
+The underlying cookbooks declare a lot more tunable attributes. Some of them
+are relevant for a production setup, and they will be documented in this
+document in the near future; others are internal or very advanced. You can
+find a complete list of tunable attributes by perusing the documentation for
+each cookbook:
+
+* [general](https://github.com/zephirworks/cloudfoundry-cookbook.git);
+* [cloud_controller](https://github.com/zephirworks/cloudfoundry-cloud_controller-cookbook.git);
+* [health_manager](https://github.com/zephirworks/cloudfoundry-health_manager-cookbook.git);
+* [router](https://github.com/zephirworks/cloudfoundry-router-cookbook.git)
+and the underlying [nginx](https://github.com/zephirworks/cloudfoundry-nginx-cookbook.git);
+* [stager](https://github.com/zephirworks/cloudfoundry-stager-cookbook.git);
+* [DEA](https://github.com/zephirworks/cloudfoundry-dea-cookbook.git) and the
+supported runtimes:
+ * [ruby](https://github.com/zephirworks/cloudfoundry-ruby-runtime-cookbook.git);
+* [services](https://github.com/zephirworks/cloudfoundry_service-cookbook.git):
+ * [filesystem](https://github.com/zephirworks/cloudfoundry-filesystem-service-cookbook.git);
+ * [mongodb](https://github.com/zephirworks/cloudfoundry-mongodb-service-cookbook.git);
+ * [rabbitmq](https://github.com/zephirworks/cloudfoundry-rabbitmq-service-cookbook.git).
+
 ## Contributing
 
 1. Fork it
