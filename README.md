@@ -29,6 +29,21 @@ When done, you have a running CloudFoundry / VCAP VM running; which can be acces
 
 Follow [these instructions to try out your setup](https://github.com/cloudfoundry/oss-docs/tree/master/vcap/single_and_multi_node_deployments_with_dev_setup#trying-your-setup), remembering that your API url is: ```http://api.vcap.me:9022```
 
+## Configuration
+
+You can fine-tune your Cloud Foundry installation by setting a few attributes:
+
+* `node['cloudfoundry_cloud_controller']['server']['services']` - an Array of
+services that you want to support in your setup.
+
+Some attributes control more advanced aspects of your cluster; you should
+be careful when changing those, and make sure you understand the consequences:
+
+* `node['cloudfoundry_cloud_controller']['server']['api_url']` - internal URL
+for Cloud Foundry components that need to connect to the `cloud_controller`.
+This may be different from the public URL, depending on your topology.
+Defaults to `http://api.vcap.me:9200`.
+
 ## Contributing
 
 1. Fork it
