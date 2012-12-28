@@ -1,6 +1,12 @@
 # Cloud Foundry on Vagrant
 
-Spin up a local Cloud Foundry installation using Vagrant
+Spin up a local [Cloud Foundry](http://www.cloudfoundry.org) installation
+using Vagrant, in a variety of topologies.
+
+Supported topologies:
+
+* single node;
+* more coming soon.
 
 ## Installation
 
