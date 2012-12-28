@@ -7,7 +7,8 @@
       "server": {
         "services": [
           "filesystem",
-          "mongodb"
+          "mongodb",
+          "rabbitmq"
         ]
       }
     }
