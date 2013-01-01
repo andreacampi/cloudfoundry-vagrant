@@ -11,6 +11,7 @@ cookbook "cloudfoundry-rabbitmq-service", '~> 1.0.1'
 cookbook "cloudfoundry-router"
 cookbook "cloudfoundry-ruby-runtime", '~> 1.1.1'
 cookbook "cloudfoundry_service", '~> 1.1.4'
+cookbook "cloudfoundry-service_broker"
 cookbook "cloudfoundry-stager"
 cookbook "nats", '~> 1.0.1'
 

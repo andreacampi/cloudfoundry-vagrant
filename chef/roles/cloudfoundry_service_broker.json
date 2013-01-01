@@ -1,0 +1,15 @@
+{
+  "name": "cloudfoundry_service_broker",
+  "description": "CloudFoundry service broker",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[cloudfoundry-service_broker]"
+  ],
+  "env_run_lists": {
+  }
+}

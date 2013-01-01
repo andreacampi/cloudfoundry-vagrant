@@ -34,7 +34,8 @@
     "role[cloudfoundry_mongodb_node]",
     "role[cloudfoundry_filesystem_gateway]",
     "role[cloudfoundry_rabbitmq_gateway]",
-    "role[cloudfoundry_rabbitmq_node]"
+    "role[cloudfoundry_rabbitmq_node]",
+    "role[cloudfoundry_service_broker]"
   ],
   "env_run_lists": {
   }
