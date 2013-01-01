@@ -1,18 +1,18 @@
 site 'http://community.opscode.com/api/v1'
 
-cookbook "cloudfoundry", '~> 1.0.2'
-cookbook "cloudfoundry-cloud_controller", '~> 1.1.0'
+cookbook "cloudfoundry", '~> 1.0.4'
+cookbook "cloudfoundry-cloud_controller", '~> 1.1.2'
 cookbook "cloudfoundry-dea"
-cookbook "cloudfoundry-filesystem-service"
+cookbook "cloudfoundry-filesystem-service", '~> 1.0.1'
 cookbook "cloudfoundry-health_manager"
-cookbook "cloudfoundry-mongodb-service", '~> 1.0.1'
-cookbook "cloudfoundry-nginx", '1.0.2'
-cookbook "cloudfoundry-rabbitmq-service", '~> 1.0.0'
+cookbook "cloudfoundry-mongodb-service", '~> 1.0.2'
+cookbook "cloudfoundry-nginx", '~> 1.0.3'
+cookbook "cloudfoundry-rabbitmq-service", '~> 1.0.1'
 cookbook "cloudfoundry-router"
-cookbook "cloudfoundry-ruby-runtime"
-cookbook "cloudfoundry_service", '~> 1.1.0'
+cookbook "cloudfoundry-ruby-runtime", '~> 1.1.1'
+cookbook "cloudfoundry_service", '~> 1.1.4'
 cookbook "cloudfoundry-stager"
-cookbook "nats"
+cookbook "nats", '~> 1.0.1'
 
 cookbook "postgresql"
 cookbook "redisio"
