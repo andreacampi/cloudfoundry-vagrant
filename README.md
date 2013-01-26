@@ -5,7 +5,7 @@ using Vagrant, in a variety of topologies.
 
 Supported topologies:
 
-* single node;
+* [single node](single-node/README.md);
 * more coming soon.
 
 ## Installation
