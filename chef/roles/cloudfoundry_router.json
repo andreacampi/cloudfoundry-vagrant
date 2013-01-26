@@ -3,6 +3,9 @@
   "description": "CloudFoundry router",
   "json_class": "Chef::Role",
   "default_attributes": {
+    "cloudfoundry_router": {
+      "listen_port": 9080
+    }
   },
   "override_attributes": {
   },
