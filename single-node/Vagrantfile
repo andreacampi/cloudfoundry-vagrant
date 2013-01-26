@@ -72,6 +72,11 @@ Vagrant::Config.run do |config|
     chef.add_role "cloudfoundry-single-node"
 
     chef.json = {
+      'cloudfoundry_cloud_controller' => {
+        'server' => {
+          'external_uri' => 'api.vcap.me:9080',
+        }
+      },
       'postgresql' => {
         'password' => {
           'postgres' => 'iloverandompasswordsbutthiswilldo'
