@@ -3,11 +3,6 @@
   "description": "CloudFoundry Filesystem gateway",
   "json_class": "Chef::Role",
   "default_attributes": {
-    "cloudfoundry_filesystem_service": {
-      "backends": [
-        "/tmp"
-      ]
-    }
   },
   "override_attributes": {
   },

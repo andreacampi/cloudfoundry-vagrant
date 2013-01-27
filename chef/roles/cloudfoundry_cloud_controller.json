@@ -3,15 +3,6 @@
   "description": "CloudFoundry cloud_controller",
   "json_class": "Chef::Role",
   "default_attributes": {
-    "cloudfoundry_cloud_controller": {
-      "server": {
-        "services": [
-          "filesystem",
-          "mongodb",
-          "rabbitmq"
-        ]
-      }
-    }
   },
   "override_attributes": {
   },

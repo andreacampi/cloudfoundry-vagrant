@@ -3,14 +3,6 @@
   "description": "A CloudFoundry mini-cluster on one node",
   "json_class": "Chef::Role",
   "default_attributes": {
-    "cloudfoundry": {
-      "api_url": "http://127.0.0.1:9022",
-      "runtimes": {
-        "ruby19": {
-          "frameworks": [ "rails3" ]
-        }
-      }
-    }
   },
   "override_attributes": {
   },
