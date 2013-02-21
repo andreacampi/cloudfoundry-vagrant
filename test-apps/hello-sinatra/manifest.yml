@@ -1,0 +1,14 @@
+---
+applications:
+  .:
+    name: hello-sinatra
+    runtime: ruby19
+    framework:
+      name: sinatra
+      info:
+        mem: 128M
+        description: Sinatra Application
+        exec: ruby hello.rb
+    url: hello-sinatra.vcap.me
+    mem: 128M
+    instances: 1
